@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    <ion-title>Game setup</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<p class="">Starting life {{ startingLife }}</p>
+<ion-button size="small"(click) ="setStartingLife(20)">20</ion-button>
+<ion-button size="small"(click) ="setStartingLife(30)">30</ion-button>
+<ion-button size="small"(click) ="setStartingLife(40)">40</ion-button>
+<ion-button size="small"(click) ="showCustomLiveInput()">Custom</ion-button>
+
+<p>Players {{ playerCount }}</p>
+<ion-button size="small" (click) ="setPlayerTotalUp()">+</ion-button>
+<!-- <ion-button size="small" class=""></ion-button> -->
+<ion-button size="small" (click) ="setPlayerTotalDown()">-</ion-button>
+
+<br>
+<br>
+<br>
+<br>
+
+<ion-button href="lobby">Host game</ion-button>
+</ion-content>
